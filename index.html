@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BigChange Welcome Pack</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto+Flex:opsz,wght@8..144,400;8..144,700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #282922; /* Charcoal */
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Roboto Flex', sans-serif;
+        }
+        
+        .gantt-bar {
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        .gantt-bar:hover {
+            transform: translateY(-2px);
+            filter: brightness(1.1);
+        }
+        .gantt-item {
+            transition: transform 0.2s ease;
+        }
+        .gantt-item:hover {
+            transform: scale(1.1);
+        }
+
+        /* For the zig-zag timeline on mobile */
+        @media (max-width: 767px) {
+            .timeline-container::before {
+                left: 20px;
+            }
+            .timeline-item-container {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+            .timeline-item-container.left-timeline,
+            .timeline-item-container.right-timeline {
+                justify-content: flex-start;
+            }
+            .timeline-item-container.left-timeline .order-1,
+            .timeline-item-container.right-timeline .order-1 {
+                order: 1;
+            }
+            .timeline-item-container .timeline-spacer {
+                display: none;
+            }
+            .timeline-item-container .timeline-content {
+                width: 100%;
+            }
+             .timeline-item-container .timeline-icon {
+                left: 20px;
+                transform: translateX(-50%);
+            }
+        }
+    </style>
+</head>
+<body class="bg-[#F4F4F4]">
+
+    <!-- Header -->
+    <header class="bg-[#0A2240] shadow-md">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <h1 class="text-2xl font-bold text-white">Welcome Pack</h1>
+                <img src="https://i.postimg.cc/gJyGgH8n/Simprogroup-removebg-preview.png" alt="Simpro Group Logo" class="h-10">
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12">
+
+        <section class="text-center mb-12">
+            <img src="https://i.postimg.cc/d00Kvcbm/Big-Change-Logo1.png" alt="BigChange Logo" class="mx-auto h-20 w-auto mb-8">
+            <h2 class="text-4xl font-bold mb-4 text-[#0072CE]">Your Journey with BigChange Starts Now</h2>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">We're excited to have you on board. This guide will walk you through the implementation process and show you how to get the most out of your BigChange investment.</p>
+        </section>
+
+        <!-- Lifecycle of Service -->
+        <section class="mb-16">
+            <h3 class="text-3xl font-bold text-center mb-12">Lifecycle of Service</h3>
+            <div class="flex flex-col md:flex-row items-center justify-center gap-8">
+                <!-- Sales -->
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center flex-1">
+                    <div class="bg-[#FF6B00] text-white rounded-full p-3 inline-block mb-4">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h4 class="text-xl font-bold mb-2">Sales</h4>
+                    <p class="text-gray-600">The sales team help understand your needs and determine how BigChange can help you be successful.</p>
+                </div>
+                <div class="hidden md:block text-gray-400">
+                    <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                </div>
+                <!-- Implement -->
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center flex-1">
+                    <div class="bg-[#FF6B00] text-white rounded-full p-3 inline-block mb-4">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                    </div>
+                    <h4 class="text-xl font-bold mb-2">Implement</h4>
+                    <p class="text-gray-600">Your implementation specialist helps you get initial value in the first 90 days.</p>
+                </div>
+                 <div class="hidden md:block text-gray-400">
+                    <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                </div>
+                <!-- Support -->
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center flex-1">
+                    <div class="bg-[#FF6B00] text-white rounded-full p-3 inline-block mb-4">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h4 class="text-xl font-bold mb-2">Support</h4>
+                    <p class="text-gray-600">You have access to our support repositories and teams from day one, 24/7.</p>
+                </div>
+                 <div class="hidden md:block text-gray-400">
+                    <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                </div>
+                <!-- Success -->
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center flex-1">
+                    <div class="bg-[#FF6B00] text-white rounded-full p-3 inline-block mb-4">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.364 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.196-1.538-1.118l1.518-4.674a1 1 0 00-.364-1.118L2.98 9.11c-.783-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path></svg>
+                    </div>
+                    <h4 class="text-xl font-bold mb-2">Success</h4>
+                    <p class="text-gray-600">Customer success is here to help you layer value on your investment as your trusted advocate.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service Timeline -->
+        <section class="mb-16">
+            <h3 class="text-3xl font-bold text-center mb-12">Service Timeline</h3>
+            <div class="bg-white p-4 sm:p-6 md:p-8 rounded-2xl shadow-lg overflow-x-auto">
+                <div class="min-w-[800px]">
+                    <!-- Header Row -->
+                    <div class="grid grid-cols-5 gap-2 text-center font-bold text-gray-500 uppercase text-sm mb-4">
+                        <div></div> <!-- Empty corner -->
+                        <div>Purchase</div>
+                        <div>Preparation</div>
+                        <div>Transition</div>
+                        <div>Live</div>
+                    </div>
+                    
+                    <!-- Timeline Body -->
+                    <div class="space-y-4">
+                        <!-- Sales Lane -->
+                        <div class="grid grid-cols-5 gap-2 items-center">
+                            <div class="font-bold text-[#0A2240] text-right pr-4">Sales</div>
+                            <div class="col-span-4 relative h-16 flex items-center">
+                                <div class="absolute w-full h-2 bg-gray-200 rounded-full"></div>
+                                <div class="gantt-bar absolute w-1/4 h-12 bg-[#0072CE] rounded-lg shadow-lg flex items-center justify-evenly px-2">
+                                    <div class="gantt-item flex items-center space-x-1" title="Demo"><svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg><span class="text-white font-semibold text-xs hidden sm:inline">Demo</span></div>
+                                    <div class="gantt-item flex items-center space-x-1" title="Order"><svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4z"></path></svg><span class="text-white font-semibold text-xs hidden sm:inline">Order</span></div>
+                                    <div class="gantt-item flex items-center space-x-1" title="Hand-off"><svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path></svg><span class="text-white font-semibold text-xs hidden sm:inline">Hand-off</span></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Onboarding Lane -->
+                        <div class="grid grid-cols-5 gap-2 items-center">
+                            <div class="font-bold text-[#FF6B00] text-right pr-4">Onboarding</div>
+                            <div class="col-span-4 relative h-16 flex items-center">
+                                <div class="absolute w-full h-2 bg-gray-200 rounded-full"></div>
+                                <div class="gantt-bar absolute w-2/4 h-12 bg-[#FF6B00] rounded-lg shadow-lg flex items-center justify-evenly px-2" style="left: 25%;">
+                                    <div class="gantt-item flex items-center space-x-1" title="Kick-off & Learning"><svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.636 5.636a9 9 0 0112.728 0M12 18h.01"></path></svg><span class="text-white font-semibold text-xs hidden sm:inline">Kick-off</span></div>
+                                    <div class="gantt-item flex items-center space-x-1" title="Scope & Plan"><svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"></path></svg><span class="text-white font-semibold text-xs hidden sm:inline">Scope</span></div>
+                                    <div class="gantt-item flex items-center space-x-1" title="Implement"><svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg><span class="text-white font-semibold text-xs hidden sm:inline">Implement</span></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Support Lane -->
+                        <div class="grid grid-cols-5 gap-2 items-center">
+                            <div class="font-bold text-yellow-500 text-right pr-4">Support</div>
+                            <div class="col-span-4 relative h-16 flex items-center">
+                                <div class="absolute w-full h-2 bg-gray-200 rounded-full"></div>
+                                <div class="gantt-bar absolute w-3/4 h-12 bg-yellow-500 rounded-lg shadow-lg flex items-center justify-around px-4" style="left: 25%;">
+                                    <div class="gantt-item flex items-center space-x-2" title="How do I?">
+                                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                        <span class="text-white font-semibold text-sm hidden sm:inline">How do I?</span>
+                                    </div>
+                                    <div class="gantt-item flex items-center space-x-2" title="Issue Resolution">
+                                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                        <span class="text-white font-semibold text-sm hidden sm:inline">Issue Resolution</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Success Lane -->
+                        <div class="grid grid-cols-5 gap-2 items-center">
+                            <div class="font-bold text-[#28E289] text-right pr-4">Success</div>
+                            <div class="col-span-4 relative h-16 flex items-center">
+                                <div class="absolute w-full h-2 bg-gray-200 rounded-full"></div>
+                                <div class="gantt-bar absolute w-2/4 h-12 bg-[#28E289] rounded-lg shadow-lg flex items-center justify-evenly px-2" style="left: 50%;">
+                                    <div class="gantt-item flex items-center space-x-1" title="Strategy"><svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"></path></svg><span class="text-white font-semibold text-xs hidden sm:inline">Strategy</span></div>
+                                    <div class="gantt-item flex items-center space-x-1" title="Value Discussion"><svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"></path></svg><span class="text-white font-semibold text-xs hidden sm:inline">Value</span></div>
+                                    <div class="gantt-item flex items-center space-x-1" title="Renew"><svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h5M20 20v-5h-5M4 4l5 5M20 20l-5-5"></path></svg><span class="text-white font-semibold text-xs hidden sm:inline">Renew</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Steps to Implementation -->
+        <section class="mb-16">
+            <h3 class="text-3xl font-bold text-center mb-16">Steps to Implementation</h3>
+            <div class="container mx-auto px-4 md:px-0">
+                <div class="relative timeline-container wrap overflow-hidden h-full">
+                    <div class="absolute h-full border-2 border-[#0072CE]/30" style="left: 50%;"></div>
+                    
+                    <!-- Right Timeline Item -->
+                    <div class="mb-8 flex justify-between items-center w-full right-timeline timeline-item-container">
+                        <div class="order-1 w-5/12 timeline-spacer"></div>
+                        <div class="z-20 flex items-center order-1 bg-[#0072CE] shadow-xl w-14 h-14 rounded-full timeline-icon">
+                             <div class="mx-auto text-white">
+                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                            </div>
+                        </div>
+                        <div class="order-1 bg-white rounded-lg shadow-xl w-full md:w-5/12 px-6 py-4 timeline-content">
+                            <h4 class="font-bold text-[#0072CE] text-xl mb-2">Power-Up</h4>
+                            <p class="text-sm leading-snug tracking-wide text-gray-600">Toolbox Talk – Navigating the system & app</p>
+                            <p class="text-sm leading-snug tracking-wide text-gray-600">Toolbox Talk – Data prep/imports</p>
+                            <p class="text-sm leading-snug tracking-wide text-gray-600">Toolbox Talk – Scheduling</p>
+                            <p class="text-sm leading-snug tracking-wide text-gray-600">Toolbox Talk – Customer/resource & fleet setup</p>
+                        </div>
+                    </div>
+
+                    <!-- Left Timeline Item -->
+                    <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline timeline-item-container">
+                        <div class="order-1 w-5/12 timeline-spacer"></div>
+                        <div class="z-20 flex items-center order-1 bg-[#0072CE] shadow-xl w-14 h-14 rounded-full timeline-icon">
+                            <div class="mx-auto text-white">
+                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                            </div>
+                        </div>
+                        <div class="order-1 bg-white rounded-lg shadow-xl w-full md:w-5/12 px-6 py-4 timeline-content">
+                            <h4 class="font-bold text-[#0072CE] text-xl text-right mb-2">Scope</h4>
+                            <ul class="list-disc list-inside text-sm text-gray-600 text-right">
+                                <li>Explore your business processes and requirements.</li>
+                                <li>Map to the features and functionality of BigChange.</li>
+                                <li>Understand customer’s data needs and flows.</li>
+                                <li>Map out deliverables to a scope and plan.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Right Timeline Item -->
+                    <div class="mb-8 flex justify-between items-center w-full right-timeline timeline-item-container">
+                        <div class="order-1 w-5/12 timeline-spacer"></div>
+                        <div class="z-20 flex items-center order-1 bg-[#0072CE] shadow-xl w-14 h-14 rounded-full timeline-icon">
+                            <div class="mx-auto text-white">
+                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+                            </div>
+                        </div>
+                        <div class="order-1 bg-white rounded-lg shadow-xl w-full md:w-5/12 px-6 py-4 timeline-content">
+                            <h4 class="font-bold text-[#0072CE] text-xl mb-2">Implement</h4>
+                            <ul class="list-disc list-inside text-sm text-gray-600">
+                                <li>Sharing/preparing initial configurations.</li>
+                                <li>Be on hand for questions as you configure the system.</li>
+                                <li>Help you apply learning on system by way of supporting webinars.</li>
+                                <li>Collaborate with you to effectively onward train.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Left Timeline Item -->
+                    <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline timeline-item-container">
+                        <div class="order-1 w-5/12 timeline-spacer"></div>
+                        <div class="z-20 flex items-center order-1 bg-[#0072CE] shadow-xl w-14 h-14 rounded-full timeline-icon">
+                           <div class="mx-auto text-white">
+                               <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                           </div>
+                        </div>
+                        <div class="order-1 bg-white rounded-lg shadow-xl w-full md:w-5/12 px-6 py-4 timeline-content">
+                            <h4 class="font-bold text-[#0072CE] text-xl text-right mb-2">Review</h4>
+                            <ul class="list-disc list-inside text-sm text-gray-600 text-right">
+                                <li>Support testing & troubleshooting.</li>
+                                <li>Help you make final optimisations to your configuration.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                     <!-- Right Timeline Item -->
+                    <div class="flex justify-between items-center w-full right-timeline timeline-item-container">
+                        <div class="order-1 w-5/12 timeline-spacer"></div>
+                        <div class="z-20 flex items-center order-1 bg-[#0072CE] shadow-xl w-14 h-14 rounded-full timeline-icon">
+                            <div class="mx-auto text-white">
+                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg>
+                            </div>
+                        </div>
+                        <div class="order-1 bg-white rounded-lg shadow-xl w-full md:w-5/12 px-6 py-4 timeline-content">
+                            <h4 class="font-bold text-[#0072CE] text-xl mb-2">Complete</h4>
+                            <ul class="list-disc list-inside text-sm text-gray-600">
+                               <li>Answer any final questions before completing project.</li>
+                               <li>Formally introduce the Customer Support process.</li>
+                               <li>Introducing Customer Success.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Power-Up Workshops -->
+        <section class="mb-16">
+            <h3 class="text-3xl font-bold text-center mb-12">Power-Up Workshops</h3>
+            <p class="text-lg text-gray-600 mb-8 text-center max-w-3xl mx-auto">A series of engaging, hands-on workshops that introduces new & existing customers to BigChange, sets expectations, and prepares them to use the platform with confidence.</p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Workshop Card 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center transform hover:-translate-y-2 transition-transform duration-300">
+                    <div class="bg-[#0072CE]/10 text-[#0072CE] rounded-full p-4 inline-block mb-4">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122"></path></svg>
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">Navigating the System & App</h4>
+                    <span class="text-sm font-semibold text-[#0072CE] bg-[#0072CE]/10 py-1 px-3 rounded-full mb-3 inline-block">Weekly</span>
+                    <p class="text-gray-600 text-sm">Quick wins for day-to-day use. Live demos, best practices, and Q&A.</p>
+                </div>
+                 <!-- Workshop Card 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center transform hover:-translate-y-2 transition-transform duration-300">
+                    <div class="bg-[#28E289]/10 text-[#28E289] rounded-full p-4 inline-block mb-4">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"></path></svg>
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">Data Prep/Imports</h4>
+                    <span class="text-sm font-semibold text-green-500 bg-green-100 py-1 px-3 rounded-full mb-3 inline-block">Monthly</span>
+                    <p class="text-gray-600 text-sm">Ensuring clean, structured data migration for powerful onboarding.</p>
+                </div>
+                 <!-- Workshop Card 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center transform hover:-translate-y-2 transition-transform duration-300">
+                    <div class="bg-[#FF6B00]/10 text-[#FF6B00] rounded-full p-4 inline-block mb-4">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">Scheduling</h4>
+                    <span class="text-sm font-semibold text-orange-500 bg-orange-100 py-1 px-3 rounded-full mb-3 inline-block">Monthly</span>
+                    <p class="text-gray-600 text-sm">Hands-on training to streamline job allocation and boost efficiency.</p>
+                </div>
+                 <!-- Workshop Card 4 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center transform hover:-translate-y-2 transition-transform duration-300">
+                    <div class="bg-[#0A2240]/10 text-[#0A2240] rounded-full p-4 inline-block mb-4">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10l2-2h8a1 1 0 001-1zM21 11.5a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 00-7.6-4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 00-4.7-7.6 8.38 8.38 0 01-.9-3.8z"></path></svg>
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">Customer/Fleet Setup</h4>
+                    <span class="text-sm font-semibold text-gray-700 bg-gray-200 py-1 px-3 rounded-full mb-3 inline-block">Monthly</span>
+                    <p class="text-gray-600 text-sm">Make sure your foundation is rock-solid and scalable for long-term success.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Training Methods -->
+        <section class="mb-16">
+            <h3 class="text-3xl font-bold text-center mb-12">Our Training Methods</h3>
+            <div class="grid lg:grid-cols-2 gap-12 items-start">
+                <!-- Left Column: Walkthroughs -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h4 class="text-2xl font-bold mb-4">BigChange Walkthrough Guides</h4>
+                    <p class="text-gray-600 mb-6">Interactive, step-by-step guides within the BigChange platform to help you learn key processes at your own pace.</p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <img src="https://i.postimg.cc/76Q3cqqG/WC-2-1.png" alt="Walkthrough Guide Example 1" class="rounded-lg shadow-md w-full h-auto">
+                        <img src="https://i.postimg.cc/RF01XWxx/WC1-1.png" alt="Walkthrough Guide Example 2" class="rounded-lg shadow-md w-full h-auto">
+                        <img src="https://i.postimg.cc/y8VPr1Rj/WC2.jpg" alt="Walkthrough Guide Example 3" class="rounded-lg shadow-md w-full h-auto">
+                        <img src="https://i.postimg.cc/rFGjJ0Dz/WC4.jpg" alt="Walkthrough Guide Example 4" class="rounded-lg shadow-md w-full h-auto">
+                    </div>
+                </div>
+                <!-- Right Column: BCU -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h4 class="text-2xl font-bold mb-4">BigChange University (BCU)</h4>
+                    <p class="text-gray-600 mb-6">Become a certified expert with our structured learning paths. Progress from Core to Expert level.</p>
+                    <img src="https://i.postimg.cc/8cG9nd4n/BCUSS.jpg" alt="BigChange University Dashboard" class="rounded-lg shadow-md w-full h-auto mb-6">
+                    <div class="grid grid-cols-3 gap-4 text-center">
+                        <div>
+                            <img src="https://i.postimg.cc/x1C0jYQT/Core1.png" alt="Core Level Badge" class="w-24 h-auto mx-auto mb-2">
+                            <p class="font-semibold">Core</p>
+                            <p class="text-sm text-gray-500">14 modules</p>
+                        </div>
+                        <div>
+                            <img src="https://i.postimg.cc/K8HmRVc7/Advanced1.png" alt="Advanced Level Badge" class="w-24 h-auto mx-auto mb-2">
+                            <p class="font-semibold">Advanced</p>
+                            <p class="text-sm text-gray-500">26 modules</p>
+                        </div>
+                        <div>
+                            <img src="https://i.postimg.cc/YSLMg3j5/Expert1.png" alt="Expert Level Badge" class="w-24 h-auto mx-auto mb-2">
+                            <p class="font-semibold">Expert</p>
+                            <p class="text-sm text-gray-500">18 modules</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Portal Section -->
+        <section class="mb-16">
+             <div class="bg-white rounded-2xl shadow-lg overflow-hidden lg:grid lg:grid-cols-2 lg:gap-4 items-center">
+                <div class="p-8 lg:p-12">
+                    <h3 class="text-3xl font-bold text-[#0A2240] mb-4">The BigChange Project Portal</h3>
+                    <p class="text-gray-600 mb-6">Stay in control of your onboarding journey. Our dedicated project portal gives you a real-time view of your progress, so you always know where things stand.</p>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <svg class="w-6 h-6 text-[#0072CE]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 8h.01M12 16h.01M12 12h.01M12 8h.01"></path></svg>
+                            </div>
+                            <div class="ml-3">
+                                <h4 class="font-semibold">Track Milestones</h4>
+                                <p class="text-gray-600 text-sm">Visualize your project timeline from kick-off to go-live.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                             <div class="flex-shrink-0">
+                                <svg class="w-6 h-6 text-[#28E289]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            </div>
+                            <div class="ml-3">
+                                <h4 class="font-semibold">Manage Tasks</h4>
+                                <p class="text-gray-600 text-sm">See exactly who needs to complete what, and when.</p>
+                            </div>
+                        </li>
+                         <li class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <svg class="w-6 h-6 text-[#FF6B00]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a2 2 0 01-2-2V7a2 2 0 012-2h2m4 0V5a2 2 0 00-2-2h-2a2 2 0 00-2 2v2m4 0h-4"></path></svg>
+                            </div>
+                            <div class="ml-3">
+                                <h4 class="font-semibold">Clear Accountability</h4>
+                                <p class="text-gray-600 text-sm">Tasks are assigned to both your team and your BigChange implementer.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="p-4">
+                     <img src="https://i.postimg.cc/CxYMftq9/PP3.jpg" alt="BigChange Project Portal Screenshot" class="rounded-lg shadow-lg w-full h-auto">
+                </div>
+            </div>
+        </section>
+        
+        <!-- Post Implementation Experience -->
+        <section class="mb-16">
+            <h3 class="text-3xl font-bold text-center mb-12">Post-Implementation Experience</h3>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Customer Success Card -->
+                <div class="bg-white rounded-2xl shadow-lg p-8">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-[#0072CE]/10 text-[#0072CE] p-3 rounded-xl mr-4">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                        </div>
+                        <h4 class="text-2xl font-bold text-[#0A2240]">Customer Success</h4>
+                    </div>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-gray-100 text-gray-700 text-sm font-medium px-3 py-1 rounded-full">Repeats</span>
+                        <span class="bg-gray-100 text-gray-700 text-sm font-medium px-3 py-1 rounded-full">Renewals</span>
+                        <span class="bg-gray-100 text-gray-700 text-sm font-medium px-3 py-1 rounded-full">Health</span>
+                        <span class="bg-gray-100 text-gray-700 text-sm font-medium px-3 py-1 rounded-full">Proactive</span>
+                        <span class="bg-gray-100 text-gray-700 text-sm font-medium px-3 py-1 rounded-full">Reviews</span>
+                        <span class="bg-gray-100 text-gray-700 text-sm font-medium px-3 py-1 rounded-full">Strategic</span>
+                        <span class="bg-gray-100 text-gray-700 text-sm font-medium px-3 py-1 rounded-full">Outcomes</span>
+                        <span class="bg-gray-100 text-gray-700 text-sm font-medium px-3 py-1 rounded-full">Value</span>
+                        <span class="bg-gray-100 text-gray-700 text-sm font-medium px-3 py-1 rounded-full">Collaborative</span>
+                        <span class="bg-gray-100 text-gray-700 text-sm font-medium px-3 py-1 rounded-full">Relationships</span>
+                    </div>
+                    <div class="mt-6 text-center bg-[#0A2240] text-white p-4 rounded-lg">
+                        <p class="font-bold">Customer Success</p>
+                        <a href="mailto:customersuccess@bigchange.com" class="hover:underline text-sm">customersuccess@bigchange.com</a>
+                    </div>
+                </div>
+                 <!-- Customer Support Card -->
+                <div class="bg-white rounded-2xl shadow-lg p-8">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-[#28E289]/10 text-[#28E289] p-3 rounded-xl mr-4">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </div>
+                        <h4 class="text-2xl font-bold text-[#0A2240]">Customer Support</h4>
+                    </div>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-gray-100 text-gray-700 text-sm font-medium px-3 py-1 rounded-full">Installations</span>
+                        <span class="bg-gray-100 text-gray-700 text-sm font-medium px-3 py-1 rounded-full">Roadcrew</span>
+                        <span class="bg-gray-100 text-gray-700 text-sm font-medium px-3 py-1 rounded-full">Help Centre</span>
+                        <span class="bg-gray-100 text-gray-700 text-sm font-medium px-3 py-1 rounded-full">Tech Support</span>
+                        <span class="bg-gray-100 text-gray-700 text-sm font-medium px-3 py-1 rounded-full">Transactional</span>
+                        <span class="bg-gray-100 text-gray-700 text-sm font-medium px-3 py-1 rounded-full">Functional</span>
+                        <span class="bg-gray-100 text-gray-700 text-sm font-medium px-3 py-1 rounded-full">How Do I?</span>
+                        <span class="bg-gray-100 text-gray-700 text-sm font-medium px-3 py-1 rounded-full">Issue</span>
+                        <span class="bg-gray-100 text-gray-700 text-sm font-medium px-3 py-1 rounded-full">Outage</span>
+                    </div>
+                    <div class="mt-6 text-center bg-[#0A2240] text-white p-4 rounded-lg">
+                        <p class="font-bold">support.bigchange.com</p>
+                        <p class="font-bold text-sm">0113 457 1000</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="mb-16">
+            <h3 class="text-3xl font-bold text-center mb-12">Frequently Asked Questions</h3>
+            <div class="max-w-4xl mx-auto space-y-4">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h4 class="text-lg font-semibold mb-2">What does implementation include?</h4>
+                    <p class="text-gray-600">Implementation is about getting you initial value from your purchase. We focus on scheduling basic jobs and provide key supporting processes. More advanced requirements can be explored with your Customer/Success representative.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h4 class="text-lg font-semibold mb-2">What are the lead-times to complete my implementation?</h4>
+                    <p class="text-gray-600">Your onboarding project will be assigned and your scope call will take place within two weeks of the project being assigned. The end-to-end process will typically take 90 days or less.</p>
+                </div>
+                 <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h4 class="text-lg font-semibold mb-2">Do I have a dedicated/exclusive contact for implementation?</h4>
+                    <p class="text-gray-600">You are provided a named specialist to ensure continuity, but this specialist will be running with several projects and is not exclusive to you.</p>
+                </div>
+                 <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h4 class="text-lg font-semibold mb-2">Will BigChange train all my employees and configure every aspect of the platform?</h4>
+                    <p class="text-gray-600">Your implementation specialist will help train your key members of staff, using our BigChange University online learning platform as the primary vehicle, but typically with a view to you onward training this within your company. We strongly advise all users involved in set up from your company complete the Core University before the scope call takes place.</p>
+                </div>
+                 <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h4 class="text-lg font-semibold mb-2">Will BigChange mirror my existing worksheets/templates?</h4>
+                    <p class="text-gray-600">If your existing template is in Word format, we can typically guide you to replicate the look and feel, however standard onboarding will typically include our standard templates, and any custom work to replicate your existing worksheets would be scoped out in the Sales process.</p>
+                </div>
+                 <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h4 class="text-lg font-semibold mb-2">I am too busy to implement BigChange, what can I do?</h4>
+                    <p class="text-gray-600">Your core BigChange license purchase is independent from your Onboarding package. Whilst your OB package is intended to be used within 90 days, it is possible to defer your Onboarding till a later stage. Note that your monthly license charge will continue in full during such an agreement.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="bg-[#0A2240] text-white text-center py-12 rounded-lg">
+            <h3 class="text-3xl font-bold mb-4">Need Additional Assistance?</h3>
+            <p class="max-w-2xl mx-auto mb-6">Contact your designated onboarding specialist for general requests. If you feel you need leadership intervention, please email <a href="mailto:onboardingleadership@bigchange.com" class="underline font-bold">onboardingleadership@bigchange.com</a>, and one of the management team will co-ordinate with you.</p>
+            <div class="flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0 md:space-x-8">
+                <div class="text-center">
+                    <img src="https://i.postimg.cc/BQCyvwch/DB.png" alt="David Barratt" class="rounded-full w-24 h-24 object-cover mx-auto mb-2 border-4 border-white">
+                    <h4 class="font-bold">David Barratt</h4>
+                    <p>Implementation Team Lead</p>
+                    <a href="mailto:david.barratt@bigchange.com" class="text-gray-300 hover:underline">david.barratt@bigchange.com</a>
+                </div>
+                <div class="text-center">
+                    <img src="https://i.postimg.cc/0j6J64hL/Claire.png" alt="Claire Reed" class="rounded-full w-24 h-24 object-cover mx-auto mb-2 border-4 border-white">
+                    <h4 class="font-bold">Claire Reed</h4>
+                    <p>Implementation Manager</p>
+                    <a href="mailto:claire.reed@bigchange.com" class="text-gray-300 hover:underline">claire.reed@bigchange.com</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white mt-16">
+        <div class="container mx-auto px-6 py-4 text-center text-gray-600">
+            &copy; 2024 BigChange. All Rights Reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
